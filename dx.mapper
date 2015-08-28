@@ -1,1 +1,2 @@
-out_dict = {'data': [{'date' : utcnow}]}
+out_dict = {
+    'data': [{'date' : utcnow}]}
