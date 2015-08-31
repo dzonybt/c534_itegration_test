@@ -1,2 +1,3 @@
 out_dict = {
+    
     'data': [{'date' : utcnow}]}
