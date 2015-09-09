@@ -1,0 +1,28 @@
+PROCESS_NAME = 'REST_DUMP'
+SPLITS_QTY = 800
+
+def get_split_settings(process, delay):
+    return {
+        'name': process,
+        'delay_ms': delay,
+        'params': {
+            'param_dict': {
+                'a': 'a', 
+                'b': 'b',
+                'c': 'c',
+                'd': 'd'},
+                'rest_data': [{'aaa': 'bbbb'}],
+                'rest_url': 'https://paulina-dot-test-k534-lit534.appspot.com/rest-json/ahJzfnRlc3QtazUzNC1saXQ1MzRyJwsSBkVHUm9vdBiAgICAgICACgwLEgdQcm9jZXNzGICAgMCEzIcLDKIBEGZhM2NjMGFhOTE5YzAxMGY',
+                'url': 'https://paulina-dot-test-k534-lit534.appspot.com/rest-json/ahJzfnRlc3QtazUzNC1saXQ1MzRyJwsSBkVHUm9vdBiAgICAgICACgwLEgdQcm9jZXNzGICAgMCEzIcLDKIBEGZhM2NjMGFhOTE5YzAxMGY'
+                },
+                }
+                
+def get_all_split_settings():
+    delay = 0
+    split = (get_split_settings(PROCESS_NAME, delay))
+    return SPLITS_QTY * [split]
+
+def main():
+    return get_all_split_settings()
+
+out_dict = main()
