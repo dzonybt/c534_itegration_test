@@ -1,5 +1,5 @@
 PROCESS_NAME = 'REST_DUMP'
-SPLITS_QTY = 800
+SPLITS_QTY = 10
 
 def get_split_settings(process, delay):
     return {
